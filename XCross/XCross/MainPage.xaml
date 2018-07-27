@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XCross"
+             x:Class="XCross.MainPage">
+
+    <StackLayout>
+        <Button x:Name="Test1Button"
+                Text="Test1"
+                Clicked="Test1Button_Clicked"/>
+        <Button x:Name="Test2Button"
+                Text="Test2"
+                Clicked="Test2Button_Clicked"/>
+        <Button x:Name="Test3Button" 
+                Text="Test3"
+                Clicked="Test3Button_Clicked"/>
+        <Button x:Name="Test4Button" 
+                Text="Test4"
+                Clicked="Test4Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
