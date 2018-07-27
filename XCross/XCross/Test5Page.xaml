@@ -8,7 +8,9 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <Label x:Name="AllMessagesEditor"/>
+        <ScrollView>
+            <Label x:Name="AllMessagesEditor"/>
+        </ScrollView>
         <Editor x:Name="SentEditor"
                 Grid.Row="1"
                 MaxLength="250"
