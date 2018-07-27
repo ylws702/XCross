@@ -29,5 +29,9 @@ namespace XCross
         {
             await Navigation.PushAsync(new Test4Page());
         }
+        private async void Test5Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Test5Page());
+        }
     }
 }
