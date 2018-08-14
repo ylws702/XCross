@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XCross.Test6Page">
+    <StackLayout Margin="12" x:Name="Home"  Orientation="Vertical">
+        <Label Text="化学式/化学方程式："/>
+        <Entry x:Name="EquationEntry"/>
+        <Label Text="只显示系数"/>
+        <Switch x:Name="IsNumberOnly" IsToggled="True" Toggled="IsNumberOnly_Toggled"/>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="第"/>
+            <Entry x:Name="TermEntry" WidthRequest="40" Keyboard="Numeric"/>
+            <Label Text="项有"/>
+            <Entry x:Name="AmountEntry" WidthRequest="60" Margin="12,0" Keyboard="Numeric"/>
+            <Picker Title="单位">
+                <Picker.Items>
+                    <x:String>
+                        mol
+                    </x:String>
+                    <x:String>
+                        g
+                    </x:String>
+                </Picker.Items>
+            </Picker>
+            <!--<StackLayout Orientation="Vertical">
+                <RadioButton x:Name="radioButton2" Content="mol" FontSize="20" IsChecked="True"/>
+                <RadioButton x:Name="radioButton1" Content="g" FontSize="20"/>
+            </StackLayout>-->
+        </StackLayout>
+        <Button Text="计算" x:Name="Calculate" Margin="12" Clicked="Calculate_Clicked"/>
+        <Label Text="配平结果："/>
+        <Entry x:Name="ResultEntry"/>
+        <Label Text="式量："/>
+        <Entry x:Name="FormulaWeightEntry" />
+        <Label Text="物质的量："/>
+        <Entry x:Name="ResultAmountEntry"/>
+        <Label Text="质量："/>
+        <Entry x:Name="MassEntry" />
+    </StackLayout>
+</ContentPage>

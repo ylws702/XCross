@@ -20,6 +20,9 @@
         <Button x:Name="Test5Button" 
                 Text="Test5"
                 Clicked="Test5Button_Clicked"/>
+        <Button x:Name="Test6Button" 
+                Text="Test6"
+                Clicked="Test6Button_Clicked"/>
     </StackLayout>
 
 </ContentPage>

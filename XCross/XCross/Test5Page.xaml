@@ -3,22 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XCross.Test5Page">
     <Grid Margin="12" Padding="12">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
-        <ScrollView>
-            <Label x:Name="AllMessagesEditor"/>
-        </ScrollView>
-        <Editor x:Name="SentEditor"
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <ScrollView>
+                <Label x:Name="AllMessagesEditor"/>
+            </ScrollView>
+            <Editor x:Name="SentEditor"
                 Grid.Row="1"
                 MaxLength="250"
                 Completed="OnSentButtonClickedAsync"/>
-        <Button x:Name="SentButton"
+            <Button x:Name="SentButton"
                 Text="发送" 
                 WidthRequest="12"
                 Grid.Row="2"
                 Clicked="OnSentButtonClickedAsync"/>
-    </Grid>
+        </Grid>
 </ContentPage>
